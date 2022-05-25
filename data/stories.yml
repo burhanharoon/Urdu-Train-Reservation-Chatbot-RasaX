@@ -173,6 +173,3 @@ stories:
   - action: utter_ticket_book
   - intent: goodbye
   - action: utter_goodbye
-
-
-  
