@@ -1,0 +1,89 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- book_ticket:
+    use_entities: true
+- to_Lahore:
+    use_entities: true
+- to_Multan:
+    use_entities: true
+- to_Pindi:
+    use_entities: true
+- to_Karachi:
+    use_entities: true
+- to_Sialkot:
+    use_entities: true
+- to_Peshawar:
+    use_entities: true
+- select_Lahore_Trains:
+    use_entities: true
+- select_Multan_Trains:
+    use_entities: true
+- select_Pindi_Trains:
+    use_entities: true
+- select_Karachi_Trains:
+    use_entities: true
+- select_Sialkot_Trains:
+    use_entities: true
+- select_Peshawar_Trains:
+    use_entities: true
+- number_of_seats:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- Karachi_dest:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: وعلیکم السلام، میں آپ کے کیسے خدمت کرتا ہوں؟
+  utter_happy:
+  - text: Great, carry on!
+  utter_destination:
+  - text: آپ نے کس شہر کے لیے ٹکٹ بک کروانی ہے؟
+  utter_Lahore_Trains:
+  - text: |-
+      لاہور کے لیے ٹرین:
+       بدر ایکسپریس  صبح 10 بجے اور علامہ اقبال ایکسپریس شام کے 6 بجے ہے
+  utter_Multan_Trains:
+  - text: |-
+      ملتان کے لیے ٹرین:
+       اکبر ایکسپریس  صبح 6 بجے اور علامہ اقبال ایکسپریس شام کے 5 بجے ہے
+  utter_Pindi_Trains:
+  - text: |-
+      راولپنڈی کے لیے ٹرین:
+       راولپنڈی ایکسپریس  صبح 6 بجے اور علامہ اقبال ایکسپریس شام کے 5 بجے ہے
+  utter_Karachi_Trains:
+  - text: |-
+      کراچی کے لیے ٹرین:
+       کراچی ایکسپریس  صبح 9 بجے اور علامہ اقبال ایکسپریس شام کے 5 بجے ہے
+  utter_Sialkot_Trains:
+  - text: |-
+      سیالکوٹ کے لیے ٹرین:
+       لاثانی ایکسپریس  صبح 9 بجے اور علامہ اقبال ایکسپریس شام کے 5 بجے ہے
+  utter_Peshawar_Trains:
+  - text: |-
+      پشاور کے لیے ٹرین:
+       عوام ایکسپریس  صبح 4 بجے اور علامہ اقبال ایکسپریس شام کے 3 بجے ہے
+  utter_number_of_seats:
+  - text: آپ نے کتنی ٹکٹ (سیٹ) بک کروانی ہیں"
+  utter_ticket_book:
+  - text: آپ کی ٹکٹ بک کر دی گئ ہے
+  utter_test:
+  - text: Test Here
+  utter_goodbye:
+  - text: پاکستان ریلوے اسٹیشن میں آنے کا شکریہ، اللہ حافظ۔
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+actions: []
+forms: {}
+e2e_actions: []

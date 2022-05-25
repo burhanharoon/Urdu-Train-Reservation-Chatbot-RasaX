@@ -1,0 +1,178 @@
+version: "2.0"
+
+stories:
+- story: greet ticket source/dest_Lahore seats path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Lahore
+  - action: utter_Lahore_Trains
+  - intent: select_Lahore_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: greet ticket source/Multan seats path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Multan
+  - action: utter_Multan_Trains
+  - intent: select_Multan_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: greet ticket source/Pindi seats path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Pindi
+  - action: utter_Pindi_Trains
+  - intent: select_Pindi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: greet ticket source/dest_Karachi seats path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Karachi
+  - action: utter_Karachi_Trains
+  - intent: select_Karachi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: greet ticket source/dest seats path Sialkot
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Sialkot
+  - action: utter_Sialkot_Trains
+  - intent: select_Sialkot_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: greet ticket source/dest seats path Peshawar
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Peshawar
+  - action: utter_Peshawar_Trains
+  - intent: select_Peshawar_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+#direct destination
+- story: ticket source/dest_Lahore seats path
+  steps:
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Lahore
+  - action: utter_Lahore_Trains
+  - intent: select_Lahore_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ticket source/Multan seats path
+  steps:
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Multan
+  - action: utter_Multan_Trains
+  - intent: select_Multan_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ticket source/Pindi seats path
+  steps:
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Pindi
+  - action: utter_Pindi_Trains
+  - intent: select_Pindi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: ticket source/dest_Karachi seats path
+  steps:
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Karachi
+  - action: utter_Karachi_Trains
+  - intent: select_Karachi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: ticket source/dest seats path Sialkot
+  steps:
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Sialkot
+  - action: utter_Sialkot_Trains
+  - intent: select_Sialkot_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: greet ticket source/dest seats path Peshawar
+  steps:
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Peshawar
+  - action: utter_Peshawar_Trains
+  - intent: select_Peshawar_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+  
