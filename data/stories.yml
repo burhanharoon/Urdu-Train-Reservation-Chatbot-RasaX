@@ -1,13 +1,15 @@
 version: "2.0"
 
 stories:
-- story: greet ticket source/dest_Lahore seats path
+- story: source-Lahore destination-Karachi
   steps:
   - intent: greet
   - action: utter_greet
   - intent: book_ticket
   - action: utter_destination
   - intent: to_Lahore
+  - action: utter_source
+  - intent: to_Karachi
   - action: utter_Lahore_Trains
   - intent: select_Lahore_Trains
   - action: utter_number_of_seats
