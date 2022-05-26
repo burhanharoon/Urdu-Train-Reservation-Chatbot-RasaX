@@ -125,6 +125,8 @@ intents:
     use_entities: true
 - select_day:
     use_entities: true
+- Lahore_to_Karachi_Trip:
+    use_entities: true
 entities: []
 slots: {}
 responses:
