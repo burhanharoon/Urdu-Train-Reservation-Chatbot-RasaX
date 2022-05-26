@@ -1,5 +1,6 @@
 version: "2.0"
 
+# From Karach To All Other Cities 
 stories:
 - story: source-Karachi destination-Lahore
   steps:
@@ -18,160 +19,823 @@ stories:
   - intent: goodbye
   - action: utter_goodbye
 
-# - story: greet ticket source/Multan seats path
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: book_ticket
-#   - action: utter_destination
-#   - intent: to_Multan
-#   - action: utter_Multan_Trains
-#   - intent: select_Multan_Trains
-#   - action: utter_number_of_seats
-#   - intent: number_of_seats
-#   - action: utter_ticket_book
-#   - intent: goodbye
-#   - action: utter_goodbye
+- story: source-Karachi destination-Multan
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Multan
+  - action: utter_source
+  - intent: from_Karachi
+  - action: utter_Karachi_to_Multan_Trains
+  - intent: select_Karachi_to_Multan_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
 
-# - story: greet ticket source/Pindi seats path
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: book_ticket
-#   - action: utter_destination
-#   - intent: to_Pindi
-#   - action: utter_Pindi_Trains
-#   - intent: select_Pindi_Trains
-#   - action: utter_number_of_seats
-#   - intent: number_of_seats
-#   - action: utter_ticket_book
-#   - intent: goodbye
-#   - action: utter_goodbye
+- story: source-Karachi destination-Pindi
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Pindi
+  - action: utter_source
+  - intent: from_Karachi
+  - action: utter_Karachi_to_Pindi_Trains
+  - intent: select_Karachi_to_Pindi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
 
+- story: source-Karachi destination-Sialkot
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Sialkot
+  - action: utter_source
+  - intent: from_Karachi
+  - action: utter_Karachi_to_Sialkot_Trains
+  - intent: select_Karachi_to_Sialkot_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
 
-# - story: greet ticket source/dest_Karachi seats path
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: book_ticket
-#   - action: utter_destination
-#   - intent: to_Karachi
-#   - action: utter_Karachi_Trains
-#   - intent: select_Karachi_Trains
-#   - action: utter_number_of_seats
-#   - intent: number_of_seats
-#   - action: utter_ticket_book
-#   - intent: goodbye
-#   - action: utter_goodbye
-
-
-# - story: greet ticket source/dest seats path Sialkot
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: book_ticket
-#   - action: utter_destination
-#   - intent: to_Sialkot
-#   - action: utter_Sialkot_Trains
-#   - intent: select_Sialkot_Trains
-#   - action: utter_number_of_seats
-#   - intent: number_of_seats
-#   - action: utter_ticket_book
-#   - intent: goodbye
-#   - action: utter_goodbye
-
-# - story: greet ticket source/dest seats path Peshawar
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: book_ticket
-#   - action: utter_destination
-#   - intent: to_Peshawar
-#   - action: utter_Peshawar_Trains
-#   - intent: select_Peshawar_Trains
-#   - action: utter_number_of_seats
-#   - intent: number_of_seats
-#   - action: utter_ticket_book
-#   - intent: goodbye
-#   - action: utter_goodbye
-
-# #direct destination
-# - story: ticket source/dest_Lahore seats path
-#   steps:
-#   - intent: book_ticket
-#   - action: utter_destination
-#   - intent: to_Lahore
-#   - action: utter_Lahore_Trains
-#   - intent: select_Lahore_Trains
-#   - action: utter_number_of_seats
-#   - intent: number_of_seats
-#   - action: utter_ticket_book
-#   - intent: goodbye
-#   - action: utter_goodbye
-
-# - story: ticket source/Multan seats path
-#   steps:
-#   - intent: book_ticket
-#   - action: utter_destination
-#   - intent: to_Multan
-#   - action: utter_Multan_Trains
-#   - intent: select_Multan_Trains
-#   - action: utter_number_of_seats
-#   - intent: number_of_seats
-#   - action: utter_ticket_book
-#   - intent: goodbye
-#   - action: utter_goodbye
-
-# - story: ticket source/Pindi seats path
-#   steps:
-#   - intent: book_ticket
-#   - action: utter_destination
-#   - intent: to_Pindi
-#   - action: utter_Pindi_Trains
-#   - intent: select_Pindi_Trains
-#   - action: utter_number_of_seats
-#   - intent: number_of_seats
-#   - action: utter_ticket_book
-#   - intent: goodbye
-#   - action: utter_goodbye
+- story: source-Karachi destination-Peshawar
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Peshawar
+  - action: utter_source
+  - intent: from_Karachi
+  - action: utter_Karachi_to_Peshawar_Trains
+  - intent: select_Karachi_to_Peshawar_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
 
 
-# - story: ticket source/dest_Karachi seats path
-#   steps:
-#   - intent: book_ticket
-#   - action: utter_destination
-#   - intent: to_Karachi
-#   - action: utter_Karachi_Trains
-#   - intent: select_Karachi_Trains
-#   - action: utter_number_of_seats
-#   - intent: number_of_seats
-#   - action: utter_ticket_book
-#   - intent: goodbye
-#   - action: utter_goodbye
+# From Lahore To All Other Cities 
+- story: source-Lahore destination-Karachi
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Karachi
+  - action: utter_source
+  - intent: from_Lahore
+  - action: utter_Lahore_to_Karachi_Trains
+  - intent: select_Lahore_to_Karachi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Lahore destination-Multan
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Multan
+  - action: utter_source
+  - intent: from_Lahore
+  - action: utter_Lahore_to_Multan_Trains
+  - intent: select_Lahore_to_Multan_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Lahore destination-Pindi
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Pindi
+  - action: utter_source
+  - intent: from_Lahore
+  - action: utter_Lahore_to_Pindi_Trains
+  - intent: select_Lahore_to_Pindi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Lahore destination-Sialkot
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Sialkot
+  - action: utter_source
+  - intent: from_Lahore
+  - action: utter_Lahore_to_Sialkot_Trains
+  - intent: select_Lahore_to_Sialkot_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Lahore destination-Peshawar
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Peshawar
+  - action: utter_source
+  - intent: from_Lahore
+  - action: utter_Lahore_to_Peshawar_Trains
+  - intent: select_Lahore_to_Peshawar_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
 
 
-# - story: ticket source/dest seats path Sialkot
-#   steps:
-#   - intent: book_ticket
-#   - action: utter_destination
-#   - intent: to_Sialkot
-#   - action: utter_Sialkot_Trains
-#   - intent: select_Sialkot_Trains
-#   - action: utter_number_of_seats
-#   - intent: number_of_seats
-#   - action: utter_ticket_book
-#   - intent: goodbye
-#   - action: utter_goodbye
+# From Peshawar
+- story: source-Peshawar destination-Multan
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Multan
+  - action: utter_source
+  - intent: from_Peshawar
+  - action: utter_Peshawar_to_Multan_Trains
+  - intent: select_Peshawar_to_Multan_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
 
-# - story: greet ticket source/dest seats path Peshawar
-#   steps:
-#   - intent: book_ticket
-#   - action: utter_destination
-#   - intent: to_Peshawar
-#   - action: utter_Peshawar_Trains
-#   - intent: select_Peshawar_Trains
-#   - action: utter_number_of_seats
-#   - intent: number_of_seats
-#   - action: utter_ticket_book
-#   - intent: goodbye
-#   - action: utter_goodbye
+- story: source-Peshawar destination-Pindi
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Pindi
+  - action: utter_source
+  - intent: from_Peshawar
+  - action: utter_Peshawar_to_Pindi_Trains
+  - intent: select_Peshawar_to_Pindi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Peshawar destination-Karachi
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Karachi
+  - action: utter_source
+  - intent: from_Peshawar
+  - action: utter_Peshawar_to_Karachi_Trains
+  - intent: select_Peshawar_to_Karachi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Peshawar destination-Sialkot
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Sialkot
+  - action: utter_source
+  - intent: from_Peshawar
+  - action: utter_Peshawar_to_Sialkot_Trains
+  - intent: select_Peshawar_to_Sialkot_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Peshawar destination-Lahore
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Lahore
+  - action: utter_source
+  - intent: from_Peshawar
+  - action: utter_Peshawar_to_Lahore_Trains
+  - intent: select_Peshawar_to_Lahore_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+# From Multan
+- story: source-Multan destination-Lahore
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Lahore
+  - action: utter_source
+  - intent: from_Multan
+  - action: utter_Multan_to_Lahore_Trains
+  - intent: select_Multan_to_Lahore_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Multan destination-Pindi
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Pindi
+  - action: utter_source
+  - intent: from_Multan
+  - action: utter_Multan_to_Pindi_Trains
+  - intent: select_Multan_to_Pindi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Multan destination-Karachi
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Karachi
+  - action: utter_source
+  - intent: from_Multan
+  - action: utter_Multan_to_Karachi_Trains
+  - intent: select_Multan_to_Karachi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Multan destination-Sialkot
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Sialkot
+  - action: utter_source
+  - intent: from_Multan
+  - action: utter_Multan_to_Sialkot_Trains
+  - intent: select_Multan_to_Sialkot_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Multan destination-Peshawar
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Peshawar
+  - action: utter_source
+  - intent: from_Multan
+  - action: utter_Multan_to_Peshawar_Trains
+  - intent: select_Multan_to_Peshawar_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+# From Pindi
+- story: source-Pindi destination-Peshawar
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Peshawar
+  - action: utter_source
+  - intent: from_Pindi
+  - action: utter_Pindi_to_Peshawar_Trains
+  - intent: select_Pindi_to_Peshawar_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Pindi destination-Multan
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Multan
+  - action: utter_source
+  - intent: from_Pindi
+  - action: utter_Pindi_to_Multan_Trains
+  - intent: select_Pindi_to_Multan_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Pindi destination-Karachi
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Karachi
+  - action: utter_source
+  - intent: from_Pindi
+  - action: utter_Pindi_to_Karachi_Trains
+  - intent: select_Pindi_to_Karachi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Pindi destination-Sialkot
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Sialkot
+  - action: utter_source
+  - intent: from_Pindi
+  - action: utter_Pindi_to_Sialkot_Trains
+  - intent: select_Pindi_to_Sialkot_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Pindi destination-Peshawar
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Peshawar
+  - action: utter_source
+  - intent: from_Pindi
+  - action: utter_Pindi_to_Peshawar_Trains
+  - intent: select_Pindi_to_Peshawar_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Pindi destination-Lahore
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Lahore
+  - action: utter_source
+  - intent: from_Pindi
+  - action: utter_Pindi_to_Lahore_Trains
+  - intent: select_Pindi_to_Lahore_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+# Sialkot
+- story: source-Sialkot destination-Lahore
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Lahore
+  - action: utter_source
+  - intent: from_Sialkot
+  - action: utter_Sialkot_to_Lahore_Trains
+  - intent: select_Sialkot_to_Lahore_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Sialkot destination-Multan
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Multan
+  - action: utter_source
+  - intent: from_Sialkot
+  - action: utter_Sialkot_to_Multan_Trains
+  - intent: select_Sialkot_to_Multan_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Sialkot destination-Pindi
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Pindi
+  - action: utter_source
+  - intent: from_Sialkot
+  - action: utter_Sialkot_to_Pindi_Trains
+  - intent: select_Sialkot_to_Pindi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Sialkot destination-Karachi
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Karachi
+  - action: utter_source
+  - intent: from_Sialkot
+  - action: utter_Sialkot_to_Karachi_Trains
+  - intent: select_Sialkot_to_Karachi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Sialkot destination-Peshawar
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_ticket
+  - action: utter_destination
+  - intent: to_Peshawar
+  - action: utter_source
+  - intent: from_Sialkot
+  - action: utter_Sialkot_to_Peshawar_Trains
+  - intent: select_Sialkot_to_Peshawar_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+# Direct Destination
+# Abdullah's Voice Note
+# Souce: Karachi
+- story: source-Karachi destination-Lahore direct-destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: to_Lahore
+  - action: utter_source
+  - intent: from_Karachi
+  - action: utter_day
+  - intent: select_day
+  - action: utter_Karachi_to_Lahore_Trains
+  - intent: select_Karachi_to_Lahore_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Karachi destination-Multan direct-destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: to_Multan
+  - action: utter_source
+  - intent: from_Karachi
+  - action: utter_day
+  - intent: select_day
+  - action: utter_Karachi_to_Multan_Trains
+  - intent: select_Karachi_to_Multan_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Karachi destination-Pindi direct-destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: to_Pindi
+  - action: utter_source
+  - intent: from_Karachi
+  - action: utter_day
+  - intent: select_day
+  - action: utter_Karachi_to_Pindi_Trains
+  - intent: select_Karachi_to_Pindi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Karachi destination-Sialkot direct-destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: to_Sialkot
+  - action: utter_source
+  - intent: from_Karachi
+  - action: utter_day
+  - intent: select_day
+  - action: utter_Karachi_to_Sialkot_Trains
+  - intent: select_Karachi_to_Sialkot_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Karachi destination-Peshawar direct-destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: to_Peshawar
+  - action: utter_source
+  - intent: from_Karachi
+  - action: utter_day
+  - intent: select_day
+  - action: utter_Karachi_to_Peshawar_Trains
+  - intent: select_Karachi_to_Peshawar_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+# Syed Hamza's Voice Note
+# Destination: Karachi
+- story: source-Lahore destination-Karachi direct-destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: to_Karachi
+  - action: utter_source
+  - intent: from_Lahore
+  - action: utter_day
+  - intent: select_day
+  - action: utter_Lahore_to_Karachi_Trains
+  - intent: select_Lahore_to_Karachi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Multan destination-Karachi direct-destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: to_Karachi
+  - action: utter_source
+  - intent: from_Multan
+  - action: utter_Multan_to_Karachi_Trains
+  - intent: select_Multan_to_Karachi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Pindi destination-Karachi direct-destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: to_Karachi
+  - action: utter_source
+  - intent: from_Pindi
+  - action: utter_Pindi_to_Karachi_Trains
+  - intent: select_Pindi_to_Karachi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Sialkot destination-Karachi direct-destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: to_Karachi
+  - action: utter_source
+  - intent: from_Sialkot
+  - action: utter_Sialkot_to_Karachi_Trains
+  - intent: select_Sialkot_to_Karachi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Peshawar destination-Karahi direct-destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: to_Karachi
+  - action: utter_source
+  - intent: from_Peshawar
+  - action: utter_Peshawar_to_Karachi_Trains
+  - intent: select_Peshawar_to_Karachi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+# Bilal's Voice Note
+# Destination: Peshawar
+- story: source-Lahore destination-Peshawar direct-destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: to_Peshawar
+  - action: utter_source
+  - intent: from_Lahore
+  - action: utter_Lahore_to_Peshawar_Trains
+  - intent: select_Lahore_to_Peshawar_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Multan destination-Peshawar direct-destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: to_Peshawar
+  - action: utter_source
+  - intent: from_Multan
+  - action: utter_Multan_to_Peshawar_Trains
+  - intent: select_Multan_to_Peshawar_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Pindi destination-Peshawar direct-destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: to_Peshawar
+  - action: utter_source
+  - intent: from_Pindi
+  - action: utter_Pindi_to_Peshawar_Trains
+  - intent: select_Pindi_to_Peshawar_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Sialkot destination-Peshawar direct-destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: to_Peshawar
+  - action: utter_source
+  - intent: from_Sialkot
+  - action: utter_Sialkot_to_Peshawar_Trains
+  - intent: select_Sialkot_to_Peshawar_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: source-Karachi destination-Peshawar direct-destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: to_Peshawar
+  - action: utter_source
+  - intent: from_Karachi
+  - action: utter_Karachi_to_Peshawar_Trains
+  - intent: select_Karachi_to_Peshawar_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+# Source and Destination in one go!
+# Hassan's Voice
+- story: source-Islamabad destination-Lahore Complete-Trip-Defination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: select_Islamabad_to_Lahore_Trip
+  - action: utter_Islamabad_to_Lahore_Trains
+  - intent: select_Islamabad_to_Lahore_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+# Ghulam Hur's Voice Note
+- story: source-Lahore destination-Karachi Complete-Trip-Defination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: select_Lahore_to_Karachi_Trip
+  - action: utter_Lahore_to_Karachi_Trains
+  - intent: select_Lahore_to_Karachi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+# Daud's Voice Note
+- story: source-Lahore destination-Sakhr Complete-Trip-Defination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: select_Lahore_to_Sakhr_Trip
+  - action: utter_Lahore_to_Sakhr_Trains
+  - intent: select_Lahore_to_Sakhr_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+  
+# Junaid's Voice Note
+- story: source-Lahore destination-Pindi Complete-Trip-Defination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: select_Lahore_to_Pindi_Trip
+  - action: utter_Lahore_to_Pindi_Trains
+  - intent: select_Lahore_to_Pindi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye

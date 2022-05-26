@@ -23,72 +23,191 @@ intents:
     use_entities: true
 - to_Peshawar:
     use_entities: true
-- select_Lahore_Trains:
+- number_of_seats:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- from_Karachi:
+    use_entities: true
+- from_Lahore:
+    use_entities: true
+- from_Peshawar:
+    use_entities: true
+- from_Pindi:
+    use_entities: true
+- from_Sialkot:
+    use_entities: true
+- from_Multan:
+    use_entities: true
+- select_Karachi_to_Lahore_Trains:
+    use_entities: true
+- select_Karachi_to_Multan_Trains:
+    use_entities: true
+- select_Karachi_to_Pindi_Trains:
+    use_entities: true
+- select_Karachi_to_Sialkot_Trains:
+    use_entities: true
+- select_Karachi_to_Peshawar_Trains:
+    use_entities: true
+- select_Lahore_to_Karachi_Trains:
+    use_entities: true
+- select_Lahore_to_Multan_Trains:
+    use_entities: true
+- select_Lahore_to_Pindi_Trains:
+    use_entities: true
+- select_Lahore_to_Sialkot_Trains:
+    use_entities: true
+- select_Lahore_to_Peshawar_Trains:
+    use_entities: true
+- select_Lahore_to_Sakhr_Trains:
+    use_entities: true
+- select_Peshawar_to_Karachi_Trains:
+    use_entities: true
+- select_Peshawar_to_Multan_Trains:
+    use_entities: true
+- select_Peshawar_to_Pindi_Trains:
+    use_entities: true
+- select_Peshawar_to_Sialkot_Trains:
+    use_entities: true
+- select_Peshawar_to_Lahore_Trains:
+    use_entities: true
+- select_Sialkot_to_Karachi_Trains:
+    use_entities: true
+- select_Sialkot_to_Multan_Trains:
+    use_entities: true
+- select_Sialkot_to_Pindi_Trains:
+    use_entities: true
+- select_Sialkot_to_Peshawar_Trains:
+    use_entities: true
+- select_Sialkot_to_Lahore_Trains:
+    use_entities: true
+- select_Pindi_to_Karachi_Trains:
+    use_entities: true
+- select_Pindi_to_Multan_Trains:
+    use_entities: true
+- select_Pindi_to_Sialkot_Trains:
+    use_entities: true
+- select_Pindi_to_Peshawar_Trains:
+    use_entities: true
+- select_Pindi_to_Lahore_Trains:
+    use_entities: true
+- select_Multan_to_Karachi_Trains:
+    use_entities: true
+- select_Multan_to_Pindi_Trains:
+    use_entities: true
+- select_Multan_to_Sialkot_Trains:
+    use_entities: true
+- select_Multan_to_Peshawar_Trains:
+    use_entities: true
+- select_Multan_to_Lahore_Trains:
+    use_entities: true
+- select_Islamabad_to_Lahore_Trains:
+    use_entities: true
+- select_Lahore_to_Karachi_Trip:
+    use_entities: true
+- select_Islamabad_to_Lahore_Trip:
+    use_entities: true
+- select_Lahore_to_Sakhr_Trip:
+    use_entities: true
+- select_Lahore_to_Pindi_Trip:
     use_entities: true
 - select_Multan_Trains:
     use_entities: true
 - select_Pindi_Trains:
     use_entities: true
-- select_Karachi_Trains:
-    use_entities: true
 - select_Sialkot_Trains:
+    use_entities: true
+- select_Lahore_Trains:
+    use_entities: true
+- select_Karachi_Trains:
     use_entities: true
 - select_Peshawar_Trains:
     use_entities: true
-- number_of_seats:
+- select_day:
     use_entities: true
-- bot_challenge:
-    use_entities: true
-- Karachi_dest:
+- Lahore_to_Karachi_Trip:
     use_entities: true
 entities: []
 slots: {}
 responses:
   utter_greet:
-  - text: وعلیکم السلام، میں آپ کے کیسے خدمت کرتا ہوں؟
-  utter_happy:
-  - text: Great, carry on!
+  - text: وعلیکم السلام،پاکستان آن لائن ریلوے ٹکٹ بکنگ میں خوش آمدید۔ میں آپ کے کیسے خدمت کرسکتا ہوں؟
   utter_source:
   - text: آپ نے کس شہر سے جانا ہے؟
   utter_destination:
   - text: آپ نے کس شہر کے لیے ٹکٹ بک کروانی ہے؟
-  utter_Lahore_Trains:
-  - text: |-
-      لاہور کے لیے ٹرین:
-       لماو ایکسپریس  صبح 10 بجے اور علامہ اقبال ایکسپریس شام کے 6 بجے ہے
-  utter_Multan_Trains:
-  - text: |-
-      ملتان کے لیے ٹرین:
-       اکبر ایکسپریس  صبح 6 بجے اور علامہ اقبال ایکسپریس شام کے 5 بجے ہے
-  utter_Pindi_Trains:
-  - text: |-
-      راولپنڈی کے لیے ٹرین:
-       راولپنڈی ایکسپریس  صبح 6 بجے اور علامہ اقبال ایکسپریس شام کے 5 بجے ہے
-  utter_Karachi_Trains:
-  - text: |-
-      کراچی کے لیے ٹرین:
-       کراچی ایکسپریس  صبح 9 بجے اور علامہ اقبال ایکسپریس شام کے 5 بجے ہے
-       
   utter_Karachi_to_Lahore_Trains:
-  - text: |-
-      کراچی سے لاہور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے اور شامی ایکسپریس شام 5 بجے نکلتی ہے:
-      
-  utter_Sialkot_Trains:
-  - text: |-
-      سیالکوٹ کے لیے ٹرین:
-       لاثانی ایکسپریس  صبح 9 بجے اور علامہ اقبال ایکسپریس شام کے 5 بجے ہے
-  utter_Peshawar_Trains:
-  - text: |-
-      پشاور کے لیے ٹرین:
-       عوام ایکسپریس  صبح 4 بجے اور علامہ اقبال ایکسپریس شام کے 3 بجے ہے
+  - text: 'کراچی سے لاہور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے (قیمت -\6000 روپے) نکلتی ہے:'
+  utter_Karachi_to_Multan_Trains:
+  - text: 'کراچی سے ملتان کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Karachi_to_Pindi_Trains:
+  - text: 'کراچی سے  پنڈی کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Karachi_to_Sialkot_Trains:
+  - text: 'کراچی سے سیالکوٹ کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Karachi_to_Peshawar_Trains:
+  - text: 'کراچی سے پشاور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Lahore_to_Karachi_Trains:
+  - text: 'لاہور سے کراچی کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Lahore_to_Multan_Trains:
+  - text: 'لاہور سے ملتان کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Lahore_to_Pindi_Trains:
+  - text: 'لاہور سے پنڈی کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Lahore_to_Sialkot_Trains:
+  - text: 'لاہور سے سیالکوٹ کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Lahore_to_Peshawar_Trains:
+  - text: 'لاہور سے پشاور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Lahore_to_Sakhr_Trains:
+  - text: 'لاہور سے پشاور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Peshawar_to_Karachi_Trains:
+  - text: 'پشاور سے کراچی کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Peshawar_to_Multan_Trains:
+  - text: 'پشاور سے ملتان کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Peshawar_to_Pindi_Trains:
+  - text: 'پشاور سے  پنڈی کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Peshawar_to_Sialkot_Trains:
+  - text: 'پشاور سے سیالکوٹ کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Peshawar_to_Lahore_Trains:
+  - text: 'پشاور سے لاہور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Multan_to_Karachi_Trains:
+  - text: 'ملتان سے کراچی کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Multan_to_Peshawar_Trains:
+  - text: 'ملتان سے پشاور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Multan_to_Pindi_Trains:
+  - text: 'ملتان سے  پنڈی کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Multan_to_Sialkot_Trains:
+  - text: 'ملتان سے سیالکوٹ کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Multan_to_Lahore_Trains:
+  - text: 'ملتان سے لاہور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Pindi_to_Karachi_Trains:
+  - text: 'پنڈی سے کراچی کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Pindi_to_Peshawar_Trains:
+  - text: 'پنڈی سے پشاور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Pindi_to_Multan_Trains:
+  - text: 'پنڈی سے  ملتان کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Pindi_to_Sialkot_Trains:
+  - text: 'پنڈی سے سیالکوٹ کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Pindi_to_Lahore_Trains:
+  - text: 'پنڈی سے لاہور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Sialkot_to_Karachi_Trains:
+  - text: 'سیالکوٹ سے کراچی کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Sialkot_to_Peshawar_Trains:
+  - text: 'سیالکوٹ سے پشاور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Sialkot_to_Multan_Trains:
+  - text: 'سیالکوٹ سے  ملتان کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Sialkot_to_Pindi_Trains:
+  - text: 'سیالکوٹ سے پنڈی کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Sialkot_to_Lahore_Trains:
+  - text: 'سیالکوٹ سے لاہور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Islamabad_to_Lahore_Trains:
+  - text: 'سیالکوٹ سے لاہور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
   utter_number_of_seats:
   - text: آپ نے کتنی ٹکٹ (سیٹ) بک کروانی ہیں"
+  utter_day:
+  - text: آپ نے کس دن کی ٹکٹ بک کروانی ہیں؟"
   utter_ticket_book:
   - text: آپ کی ٹکٹ بک کر دی گئ ہے
-  utter_test:
-  - text: Test Here
   utter_goodbye:
-  - text: پاکستان ریلوے اسٹیشن میں آنے کا شکریہ، اللہ حافظ۔
+  - text: پاکستان آن لائن ریلوے اسٹیشن کو استعمال کرنے کا شکریہ، اللہ حافظ۔
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
 actions: []
