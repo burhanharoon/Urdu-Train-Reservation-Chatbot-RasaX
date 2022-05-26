@@ -538,18 +538,20 @@ stories:
   - action: utter_goodbye
 
 
-
-# Direct Destination 
-
+# Direct Destination
 
 
 # Abdullah's Voice Note
 # Souce: Karachi
 - story: source-Karachi destination-Lahore direct-destination
   steps:
+  - intent: greet
+  - action: utter_greet
   - intent: to_Lahore
   - action: utter_source
   - intent: from_Karachi
+  - action: utter_day
+  - intent: select_day
   - action: utter_Karachi_to_Lahore_Trains
   - intent: select_Karachi_to_Lahore_Trains
   - action: utter_number_of_seats
@@ -560,9 +562,13 @@ stories:
 
 - story: source-Karachi destination-Multan direct-destination
   steps:
+  - intent: greet
+  - action: utter_greet
   - intent: to_Multan
   - action: utter_source
   - intent: from_Karachi
+  - action: utter_day
+  - intent: select_day
   - action: utter_Karachi_to_Multan_Trains
   - intent: select_Karachi_to_Multan_Trains
   - action: utter_number_of_seats
@@ -573,9 +579,13 @@ stories:
 
 - story: source-Karachi destination-Pindi direct-destination
   steps:
+  - intent: greet
+  - action: utter_greet
   - intent: to_Pindi
   - action: utter_source
   - intent: from_Karachi
+  - action: utter_day
+  - intent: select_day
   - action: utter_Karachi_to_Pindi_Trains
   - intent: select_Karachi_to_Pindi_Trains
   - action: utter_number_of_seats
@@ -586,9 +596,13 @@ stories:
 
 - story: source-Karachi destination-Sialkot direct-destination
   steps:
+  - intent: greet
+  - action: utter_greet
   - intent: to_Sialkot
   - action: utter_source
   - intent: from_Karachi
+  - action: utter_day
+  - intent: select_day
   - action: utter_Karachi_to_Sialkot_Trains
   - intent: select_Karachi_to_Sialkot_Trains
   - action: utter_number_of_seats
@@ -599,9 +613,13 @@ stories:
 
 - story: source-Karachi destination-Peshawar direct-destination
   steps:
+  - intent: greet
+  - action: utter_greet
   - intent: to_Peshawar
   - action: utter_source
   - intent: from_Karachi
+  - action: utter_day
+  - intent: select_day
   - action: utter_Karachi_to_Peshawar_Trains
   - intent: select_Karachi_to_Peshawar_Trains
   - action: utter_number_of_seats
@@ -619,6 +637,8 @@ stories:
   - intent: to_Karachi
   - action: utter_source
   - intent: from_Lahore
+  - action: utter_day
+  - intent: select_day
   - action: utter_Lahore_to_Karachi_Trains
   - intent: select_Lahore_to_Karachi_Trains
   - action: utter_number_of_seats
@@ -765,13 +785,57 @@ stories:
   - action: utter_goodbye
 
 # Source and Destination in one go!
-- story: source-Karachi destination-Lahore Complete-Trip-Defination
+# Hassan's Voice
+- story: source-Islamabad destination-Lahore Complete-Trip-Defination
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: Karachi_to_Lahore_Trip
-  - action: utter_Karachi_to_Lahore_Trains
-  - intent: select_Karachi_to_Lahore_Trains
+  - intent: select_Islamabad_to_Lahore_Trip
+  - action: utter_Islamabad_to_Lahore_Trains
+  - intent: select_Islamabad_to_Lahore_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+# Ghulam Hur's Voice Note
+- story: source-Lahore destination-Karachi Complete-Trip-Defination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: select_Lahore_to_Karachi_Trip
+  - action: utter_Lahore_to_Karachi_Trains
+  - intent: select_Lahore_to_Karachi_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+
+# Daud's Voice Note
+- story: source-Lahore destination-Sakhr Complete-Trip-Defination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: select_Lahore_to_Sakhr_Trip
+  - action: utter_Lahore_to_Sakhr_Trains
+  - intent: select_Lahore_to_Sakhr_Trains
+  - action: utter_number_of_seats
+  - intent: number_of_seats
+  - action: utter_ticket_book
+  - intent: goodbye
+  - action: utter_goodbye
+  
+# Junaid's Voice Note
+- story: source-Lahore destination-Pindi Complete-Trip-Defination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: select_Lahore_to_Pindi_Trip
+  - action: utter_Lahore_to_Pindi_Trains
+  - intent: select_Lahore_to_Pindi_Trains
   - action: utter_number_of_seats
   - intent: number_of_seats
   - action: utter_ticket_book

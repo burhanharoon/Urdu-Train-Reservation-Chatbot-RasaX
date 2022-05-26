@@ -59,6 +59,8 @@ intents:
     use_entities: true
 - select_Lahore_to_Peshawar_Trains:
     use_entities: true
+- select_Lahore_to_Sakhr_Trains:
+    use_entities: true
 - select_Peshawar_to_Karachi_Trains:
     use_entities: true
 - select_Peshawar_to_Multan_Trains:
@@ -99,10 +101,16 @@ intents:
     use_entities: true
 - select_Multan_to_Lahore_Trains:
     use_entities: true
-
-- Karachi_to_Lahore_Trip:
+- select_Islamabad_to_Lahore_Trains:
     use_entities: true
-
+- select_Lahore_to_Karachi_Trip:
+    use_entities: true
+- select_Islamabad_to_Lahore_Trip:
+    use_entities: true
+- select_Lahore_to_Sakhr_Trip:
+    use_entities: true
+- select_Lahore_to_Pindi_Trip:
+    use_entities: true
 - select_Multan_Trains:
     use_entities: true
 - select_Pindi_Trains:
@@ -114,6 +122,8 @@ intents:
 - select_Karachi_Trains:
     use_entities: true
 - select_Peshawar_Trains:
+    use_entities: true
+- select_day:
     use_entities: true
 entities: []
 slots: {}
@@ -143,6 +153,8 @@ responses:
   utter_Lahore_to_Sialkot_Trains:
   - text: 'لاہور سے سیالکوٹ کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
   utter_Lahore_to_Peshawar_Trains:
+  - text: 'لاہور سے پشاور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Lahore_to_Sakhr_Trains:
   - text: 'لاہور سے پشاور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
   utter_Peshawar_to_Karachi_Trains:
   - text: 'پشاور سے کراچی کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
@@ -184,8 +196,12 @@ responses:
   - text: 'سیالکوٹ سے پنڈی کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
   utter_Sialkot_to_Lahore_Trains:
   - text: 'سیالکوٹ سے لاہور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
+  utter_Islamabad_to_Lahore_Trains:
+  - text: 'سیالکوٹ سے لاہور کے لئے ٹرین ہنگامہ ایکسپریس صبح 6 بجے  (قیمت -\2000 روپے) اور شامی ایکسپریس شام 5 بجے نکلتی (قیمت -\2000 روپے) ہے:'
   utter_number_of_seats:
   - text: آپ نے کتنی ٹکٹ (سیٹ) بک کروانی ہیں"
+  utter_day:
+  - text: آپ نے کس دن کی ٹکٹ بک کروانی ہیں؟"
   utter_ticket_book:
   - text: آپ کی ٹکٹ بک کر دی گئ ہے
   utter_goodbye:
