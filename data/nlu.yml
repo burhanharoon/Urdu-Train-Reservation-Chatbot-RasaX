@@ -270,7 +270,14 @@ nlu:
     - مجھے صبح 6 بجے والی ٹرین سے جانا ہے
     - مجھے شام 5 بجے والی ٹرین سے جانا ہے
 
-    
+# Source and destination in one go
+# Karachi to Lahore Trip
+- intent: Karachi_to_Lahore_Trip
+  examples: |
+    - مجھے کراچی سے لاہور جانا ہے
+    - مجھے کراچی سے لاہور کی ٹکٹ بک کروانی ہے
+    - مجھے کراچی سے لاہور کی ایک ٹکٹ بک کروانی ہے
+
 
 - intent: to_Lahore
   examples: |
